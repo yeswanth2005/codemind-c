@@ -1,8 +1,15 @@
 #include<stdio.h>
+int s(int,int);
 int main()
 {
-    int x,y,z;
+    int x,y;
     scanf("%d%d",&x,&y);
-    z=2*x-y;
-    printf("%d",z);
+    int res=s(x,y);
+    printf("%d",res);
+}
+int s(int x,int y)
+{
+    int o;
+    o=2*x-y;
+    return o;
 }
